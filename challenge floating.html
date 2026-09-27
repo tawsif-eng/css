@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge</title>
+    <style>
+       *{
+        box-sizing: border-box;
+       }
+       body{
+        margin:0;
+        padding:17px;
+       }
+       .container{
+        display:grid;
+        grid-template-columns: repeat(15,1fr);
+        gap:7px;
+       }
+       .box{
+        background-color: coral;
+        color:blue;
+        min-height: 295px;
+        padding:17px;
+        font-size: 32px;
+        border-radius: 7px;
+       }
+       .box1{
+        grid-column: span 5;
+       }
+       .box:nth-child(2),
+       .box:nth-child(3){
+        grid-column: span 5;
+       }
+       .inside{
+        display: grid;
+        gap:7px;
+        margin-top: 7px;
+       }
+       .inside div{
+        background-color: #f5f5dc;
+        color: black;
+        border-radius: 7px;
+        padding:12px;
+        min-height: 66px;
+        font-size: 30px;
+       }
+       .row3{
+        grid-template-columns: repeat(3,1fr);
+       }
+       .row4{
+        grid-template-columns: repeat(4,1fr);
+       }
+       .row5{
+        grid-template-columns: repeat(5,1fr);
+       }
+       .bottom{
+        min-height: 65px;
+        font-size:30px;
+        display: grid;
+        gap: 7px;
+       }
+       .col4{
+        grid-column: 1/-1;
+         grid-template-columns: repeat(4,1fr);
+       }
+       .col5{
+         grid-column: 1/-1;
+         grid-template-columns: repeat(5,1fr);
+       }
+       .bottom div{
+         background-color: coral;
+        color:blue;
+        padding: 10px;
+         border-radius:7px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <span>1</span>
+    <div class="inside row3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="inside row4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="inside row5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+        </div>
+        <div class="box ">2</div>
+        <div class="box ">3</div>
+    <div class="bottom col4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="bottom col5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    </div>
+    
+</body>
+</html>
